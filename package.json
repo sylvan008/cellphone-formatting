@@ -1,0 +1,14 @@
+{
+  "name": "phone-number-format",
+  "version": "1.0.0",
+  "description": "Formats the Russian number by the input mask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phone"
+  ],
+  "author": "Oleg Selin",
+  "license": "ISC"
+}
