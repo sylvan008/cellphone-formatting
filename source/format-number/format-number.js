@@ -37,6 +37,7 @@ function getDecimalOnly(inputNumbersValue) {
 }
 
 function isNotDecimalSymbol(value) {
+  replaceDecimalRegexp.lastIndex = 0;
   return value && replaceDecimalRegexp.test(value);
 }
 
