@@ -51,7 +51,7 @@ class PhoneInputPresenter {
         symToClear = this._getCurrentSymbol();
         break;
     }
-    if (symToClear && isNotDecimalSymbol(symToClear)) {
+    if (isNotDecimalSymbol(symToClear)) {
       event.preventDefault();
     }
   }
@@ -64,7 +64,8 @@ class PhoneInputPresenter {
 
   _isEditingMode() {
     const selectionStart = this._inputComponent.getElement().selectionStart;
-    return selectionStart < this._phoneInputModel.getValue().length;
+    const phoneInputLength = this._phoneInputModel.getValue().length;
+    return selectionStart < phoneInputLength;
   }
 
   _setCursor() {
